@@ -2,8 +2,8 @@
   font-family:Roboto;
 }
 .wrapper{
-  margin auto;
-  wight 80%;
+  margin:auto;
+  width:80%;
   border:dashed 1px red;
 }
 .logo,.menu{
