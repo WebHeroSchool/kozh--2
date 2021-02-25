@@ -1,6 +1,9 @@
 .title{
   font-family:Roboto;
 }
+.body{
+  margin: 0;
+}
 .wrapper{
   margin:auto;
   width:80%;
@@ -10,13 +13,14 @@
   display:inline-block;
   border:dashed 1px red;
 }
-.logo{
-  margin-right: 63%;
-  padding: 40px 0;
-}
 .header{
+  margin: auto;
   display:flex;
   justify-content: space-between;
+}
+.section{
+  margin: auto;
+  border: dashed 1px red;
 }
 .menu{
   display:flex;
@@ -31,17 +35,21 @@
 }
 .logo{
   position: relative;
+  margin-right: 63%;
   padding: 40px 0;
+  width: 190 px;
+  height: 35 px;
   padding-left: 44px;
-  font:bold 24px/31px "pt_serif", arial,helvetica, sans-serif;
+  font:bold 24px/31px pt_serif, arial,helvetica, sans-serif;
 }
 .logo__circle{
   position: absolute;
   left: 0;
-  top: 0;
+  top: 50%;
   transform: translateY(-50%);
   width: 28px;
   height: 28px;
+  border: dashed 1px red;
   border-radius: 50%;
   opacity: .7;
 }
@@ -50,6 +58,6 @@
   top: 56%;
   background: #C8DBFB;
 }
-.logo__circle_color_dark{
+.logo__circle_color_dark-blue{
   background: #0056EC;
 }
