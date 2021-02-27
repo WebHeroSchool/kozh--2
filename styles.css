@@ -2,7 +2,7 @@
   font-family:Roboto;
 }
 .body{
-  margin: 0;
+    margin: 0;
 }
 .wrapper{
   margin:auto;
@@ -12,22 +12,19 @@
   display:inline-block;
   }
 .header{
-  margin: auto;
+  margin-bottom: 103px;
   display:flex;
   justify-content: space-between;
-}
-.section{
-  margin: auto;
 }
 .menu{
   display:flex;
   align-items: center;
 }
 .menu__item{
-  text-decoration: none;
   position: relative;
   margin-right: 26px;
   font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
+  text-decoration: none;
   color: #000;
 }
 .menu__item-active::after{
@@ -76,4 +73,33 @@
 }
 .logo__circle_color_dark-blue{
   background: #0056EC;
+}
+.main{
+  padding: 0 63% 100% 0;
+  background: top right no-repeat url(file:///C:/Users/%D0%9A%D0%BE%D0%B6%D1%83%D0%BD/Documents/GitHub/kozh--2/IMG/Frame.svg);
+}
+.main__title{
+padding-top: 100px;
+margin: 0 0 40px 0;
+font: bold 66px/85px pt_serif, arial, helvetica, sans-serif;
+}
+.main__title-text_highlight{
+  background: #ECF3FF;
+}
+.main__subtitle{
+  margin: 0 0 41px 0;
+  font: 18px/21px Roboto,arial,helvetica,sans-serif;
+}
+.main__button{
+  display: inline-block;
+  font: 14px/16px Roboto,arial,helvetica,sans-serif;
+  color:#fff;
+  background: #0056EC;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: opacity.5s;
+}
+.main__button:hover{
+  opacity: .5;
 }
