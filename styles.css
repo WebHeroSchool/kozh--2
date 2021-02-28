@@ -1,8 +1,8 @@
 .title{
   font-family:Roboto;
 }
-.body{
-    margin: 0;
+body{
+margin: 0;
 }
 .wrapper{
   margin:auto;
@@ -12,7 +12,7 @@
   display:inline-block;
   }
 .header{
-  margin-bottom: 103px;
+  margin-bottom: 184px;
   display:flex;
   justify-content: space-between;
 }
@@ -49,11 +49,11 @@
 }
 .logo{
   position: relative;
-  margin-right: 63%;
-  padding: 40px 0;
+  margin-right: 62%;
+  padding: 41px 0;
   width: 190 px;
   height: 35 px;
-  padding-left: 44px;
+  padding-left: 45px;
   font:bold 24px/31px pt_serif, arial,helvetica, sans-serif;
 }
 .logo__circle{
@@ -75,27 +75,28 @@
   background: #0056EC;
 }
 .main{
-  padding: 0 63% 100% 0;
-  background: top right no-repeat url(file:///C:/Users/%D0%9A%D0%BE%D0%B6%D1%83%D0%BD/Documents/GitHub/kozh--2/IMG/Frame.svg);
+  padding: 0 67% 100% 0;
+  background: top right no-repeat url('img/group.svg');
+  background-size: 40vw 29vw; 
 }
 .main__title{
-padding-top: 100px;
-margin: 0 0 40px 0;
-font: bold 66px/85px pt_serif, arial, helvetica, sans-serif;
+padding-top: 24px;
+margin: 0 0 35px 0;
+font: bold 65px/86px pt_serif, arial, helvetica, sans-serif;
 }
 .main__title-text_highlight{
   background: #ECF3FF;
 }
 .main__subtitle{
-  margin: 0 0 41px 0;
-  font: 18px/21px Roboto,arial,helvetica,sans-serif;
+  margin: 0 68px 38px 0;
+  font: 23px/28px Roboto,arial,helvetica,sans-serif;
 }
 .main__button{
   display: inline-block;
-  font: 14px/16px Roboto,arial,helvetica,sans-serif;
+  font: 18px/19px Roboto,arial,helvetica,sans-serif;
   color:#fff;
   background: #0056EC;
-  padding: 14px 16px;
+  padding: 20px 31px;
   text-decoration: none;
   border-radius: 4px;
   transition: opacity.5s;
