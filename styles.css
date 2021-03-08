@@ -12,7 +12,7 @@ margin: 0;
   display:inline-block;
   }
 .header{
-  margin-bottom: 184px;
+  margin-bottom: 222px;
   display:flex;
   justify-content: space-between;
 }
@@ -22,7 +22,7 @@ margin: 0;
 }
 .menu__item{
   position: relative;
-  margin-right: 26px;
+  margin-right: 29px;
   font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
   text-decoration: none;
   color: #000;
@@ -45,15 +45,14 @@ margin: 0;
   width: 100%;
 }
 .menu__item:last-child{
+  white-space: nowrap;
   margin-right: 0;
 }
 .logo{
   position: relative;
-  margin-right: 62%;
-  padding: 41px 0;
+  padding: 26px 47px 0;
   width: 190 px;
   height: 35 px;
-  padding-left: 45px;
   font:bold 24px/31px pt_serif, arial,helvetica, sans-serif;
 }
 .logo__circle{
@@ -104,6 +103,9 @@ font: bold 65px/86px pt_serif, arial, helvetica, sans-serif;
 .main__button:hover{
   opacity: .5;
 }
+.burger-menu{
+  display: none;
+}
 @media (max-width:768px){
   .menu{
     display:none;
@@ -124,9 +126,8 @@ font: bold 65px/86px pt_serif, arial, helvetica, sans-serif;
   .menu__item:last-child{
     white-space: nowrap;
   }
-
   .main {
-    padding: 0 54% 13% 80px;
+    padding: 36px 54% 19% 80px;
     background-size: 36vw 26vw;
     background-position: 512px;
     text-align: left;
@@ -141,7 +142,7 @@ font: bold 65px/86px pt_serif, arial, helvetica, sans-serif;
       font:500 18px/23px Roboto,arial,helvetica,sans-serif;
   }
   .main__button {
-      padding: 19px 24px;
+      padding: 18px 21px;
       font: 500 14px/10px Roboto,arial,helvetica,sans-serif;
   }
 }
@@ -163,9 +164,8 @@ font: bold 65px/86px pt_serif, arial, helvetica, sans-serif;
   .menu__item:last-child{
     white-space: nowrap;
   }
-
   .main {
-    padding: 1px 41% 16% 20px;
+    padding: 41px 42% 19% 21px;
     background-size: 49vw 37vw;
     background-position: 450px;
     text-align: left;
@@ -210,9 +210,6 @@ font: bold 65px/86px pt_serif, arial, helvetica, sans-serif;
       font: 500 14px/14px Roboto,arial,helvetica,sans-serif;
       text-align: center;
     }
-}
-#menu__toggle{
-  opacity: 0;
 }
 .menu__btn{
   display: flex;
@@ -259,9 +256,9 @@ font: bold 65px/86px pt_serif, arial, helvetica, sans-serif;
   box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
   transition-duration: .25s;
 }
-.menu__item{
+.menu__item-1{
   display: block;
-  padding: 12px 24px;
+  padding: 26px 0;
   color: #333;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
@@ -269,8 +266,14 @@ font: bold 65px/86px pt_serif, arial, helvetica, sans-serif;
   text-decoration: none;
   transition-duration: .25s;
 }
-.menu__item:hover{
+.menu__item-1:hover{
   background-color: #CFD8DC;
+}
+.burger-menu{
+  display: contents;
+}
+#menu__toggle{
+  opacity: 0;
 }
 #menu__toggle:checked ~ .menu__btn > span {
   transform: rotate(45deg);
@@ -286,4 +289,5 @@ font: bold 65px/86px pt_serif, arial, helvetica, sans-serif;
 #menu__toggle:checked ~ .menu__box {
   visibility: visible;
   left: 0;
+}
 }
