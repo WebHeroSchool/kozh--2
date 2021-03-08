@@ -102,15 +102,11 @@ font: bold 65px/86px pt_serif, arial, helvetica, sans-serif;
 }
 .main__button:hover{
   opacity: .5;
-}
+  }
 .burger-menu{
   display: none;
-}
-@media (max-width:768px){
-  .menu{
-    display:none;
   }
-}
+
 @media (max-width:1366px){
   .header {
     width: 62%;
@@ -180,7 +176,27 @@ font: bold 65px/86px pt_serif, arial, helvetica, sans-serif;
       font:500 19px/24px Roboto,arial,helvetica,sans-serif;
   }
 }
+@media (max-width:768px) {
+  .logo{
+    padding: 26px 181px 0;
+  }
+  .main {
+    background-position: 348px;
+    }
+  .main__title {
+      font: bold 43px/51px pt_serif, arial, helvetica, sans-serif;
+      }
+  }
 @media (max-width:375px){
+  .menu{
+    display:none;
+  }
+  .logo-text{
+    display: none;
+  }
+  .burger-menu{
+    display: contents;
+  }
   .wrapper{
     width: 100%;
   }
@@ -192,70 +208,69 @@ font: bold 65px/86px pt_serif, arial, helvetica, sans-serif;
     }
   .logo{
     padding: 8% 357px;
-  }
+    }
   .main__title {
       font: bold 31px/41px pt_serif, arial, helvetica, sans-serif;
       padding: 72% 0 0 4%;
       text-align: center;
-  }
+    }
   .main__subtitle {
       margin: 8% 7%;
       padding: 0 4%;
       font:500 16px/16px Roboto,arial,helvetica,sans-serif;
       text-align: center;
-  }
+    }
   .main__button {
       padding: 13px 23px;
       margin-left: 60px;
       font: 500 14px/14px Roboto,arial,helvetica,sans-serif;
       text-align: center;
-    }
-}
-.menu__btn{
-  display: flex;
-  align-items: center;
-  position: fixed;
-  top: 27px;
-  left: 324px;
-  width: 26px;
-  height: 24px;
-  cursor: pointer;
-  z-index: 1;
-}
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after{
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: #616161;
-  transition-duration: .25s;
-}
-.menu__btn > span::before{
-  content: '';
-  top: -8px;
-}
-.menu__btn > span::after{
-  content: '';
-  top: 8px;
-}
-.menu__box{
-  display: block;
-  position: fixed;
-  visibility: hidden;
-  top: 0;
-  left: -100%;
-  width: 300px;
-  height: 100%;
-  margin: 0;
-  padding: 80px 0;
-  list-style: none;
-  text-align: center;
-  background-color: #ECEFF1;
-  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-  transition-duration: .25s;
-}
+      }
+      .menu__btn{
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 27px;
+        left: 94%;
+        width: 26px;
+        height: 24px;
+        cursor: pointer;
+        z-index: 1;
+      }
+      .menu__btn > span,
+      .menu__btn > span::before,
+      .menu__btn > span::after{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #616161;
+        transition-duration: .25s;
+      }
+      .menu__btn > span::before{
+        content: '';
+        top: -8px;
+      }
+      .menu__btn > span::after{
+        content: '';
+        top: 8px;
+      }
+      .menu__box{
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        text-align: center;
+        background-color: #ECEFF1;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+        transition-duration: .25s;
+      }
 .menu__item-1{
   display: block;
   padding: 26px 0;
@@ -265,29 +280,26 @@ font: bold 65px/86px pt_serif, arial, helvetica, sans-serif;
   font-weight: 600;
   text-decoration: none;
   transition-duration: .25s;
-}
+  }
 .menu__item-1:hover{
   background-color: #CFD8DC;
-}
-.burger-menu{
-  display: contents;
-}
+  }
 #menu__toggle{
   opacity: 0;
-}
+  }
 #menu__toggle:checked ~ .menu__btn > span {
   transform: rotate(45deg);
-}
+  }
 #menu__toggle:checked ~ .menu__btn > span::before {
   top: 0;
   transform: rotate(0);
-}
+  }
 #menu__toggle:checked ~ .menu__btn > span::after {
   top: 0;
   transform: rotate(90deg);
-}
+  }
 #menu__toggle:checked ~ .menu__box {
   visibility: visible;
   left: 0;
-}
+  }
 }
