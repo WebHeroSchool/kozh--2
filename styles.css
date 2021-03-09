@@ -147,8 +147,11 @@ font: bold 65px/86px pt_serif, arial, helvetica, sans-serif;
     width: 95%;
   }
   .header {
-    margin-left: 20px;
+    margin: 3% 2%;
     width: 70%;
+  }
+  .logo{
+    padding: 2% 7%;
   }
   .menu {
     width: 63px;
@@ -161,18 +164,17 @@ font: bold 65px/86px pt_serif, arial, helvetica, sans-serif;
     white-space: nowrap;
   }
   .main {
-    padding: 41px 42% 19% 21px;
+    padding: 0 51% 15% 2%;
     background-size: 49vw 37vw;
-    background-position: 450px;
+    background-position: 100%;
     text-align: left;
   }
   .main__title {
       font: bold 50px/63px pt_serif, arial, helvetica, sans-serif;
-      padding-top: 100px;
+      padding-top: 22%;
   }
   .main__subtitle {
-      margin-right: 149px;
-      padding-top: 5px;
+      margin-right: 20%;
       font:500 19px/24px Roboto,arial,helvetica,sans-serif;
   }
 }
@@ -181,11 +183,15 @@ font: bold 65px/86px pt_serif, arial, helvetica, sans-serif;
     padding: 26px 181px 0;
   }
   .main {
-    background-position: 348px;
+    background-position: 100%;
     }
   .main__title {
       font: bold 43px/51px pt_serif, arial, helvetica, sans-serif;
       }
+  }
+
+@media () {
+
   }
 @media (max-width:375px){
   .menu{
