@@ -308,4 +308,26 @@ font: bold 65px/86px pt_serif, arial, helvetica, sans-serif;
   visibility: visible;
   left: 0;
   }
+  @keyframes logo {
+  25% {
+     top:10px;
+     left:0;
+  }
+
+  50% {
+     top:10px;
+     left:20px;
+  }
+
+  75% {
+     top:0;
+     left:20px;
+  }
+}
+
+div {
+  animation: logo 8s infinite cubic-bezier(.5, 1.5, .03, .4);
+  top: 0;
+  left: 0;
+ }
 }
