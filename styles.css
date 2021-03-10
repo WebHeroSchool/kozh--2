@@ -12,7 +12,7 @@ margin: 0;
   display:inline-block;
   }
 .header{
-  margin-bottom: 222px;
+  margin: 10px 7px 196px 4px;
   display:flex;
   justify-content: space-between;
 }
@@ -50,10 +50,10 @@ margin: 0;
 }
 .logo{
   position: relative;
-  padding: 26px 47px 0;
+  padding: 41px 42px 36px;
   width: 190 px;
   height: 35 px;
-  font:bold 24px/31px pt_serif, arial,helvetica, sans-serif;
+  font:bold 25px/32px pt_serif, arial,helvetica, sans-serif;
 }
 .logo__circle{
   position: absolute;
@@ -74,21 +74,22 @@ margin: 0;
   background: #0056EC;
 }
 .main{
-  padding: 0 67% 100% 0;
+  padding: 0 63% 11% 3px;
   background: top right no-repeat url('img/group.svg');
-  background-size: 40vw 29vw;
+  background-size: 37vw 28vw;
+  background-position-x: 96%;
 }
 .main__title{
-padding-top: 24px;
+padding-top: 16px;
 margin: 0 0 35px 0;
-font: bold 65px/86px pt_serif, arial, helvetica, sans-serif;
+font: bold 68px/86px pt_serif, arial, helvetica, sans-serif;
 }
 .main__title-text_highlight{
   background: #ECF3FF;
 }
 .main__subtitle{
   margin: 0 68px 38px 0;
-  font: 23px/28px Roboto,arial,helvetica,sans-serif;
+  font: 23px/27px Roboto,arial,helvetica,sans-serif;
 }
 .main__button{
   display: inline-block;
@@ -110,11 +111,12 @@ font: bold 65px/86px pt_serif, arial, helvetica, sans-serif;
 @media (max-width:1366px){
   .header {
     width: 62%;
-    margin-left: 82px;
-    margin-bottom: 0;
+    margin:0 36px 0  82px;
+
   }
   .menu {
-    width: 71px;
+    width: 70px;
+    height: 120px;
   }
   .menu__item {
     font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
@@ -123,15 +125,15 @@ font: bold 65px/86px pt_serif, arial, helvetica, sans-serif;
     white-space: nowrap;
   }
   .main {
-    padding: 36px 54% 19% 80px;
+    padding: 33px 53% 12% 83px;
     background-size: 36vw 26vw;
-    background-position: 512px;
+    background-position: 514px;
     text-align: left;
   }
   .main__title {
       font: bold 52px/64px pt_serif, arial, helvetica, sans-serif;
       margin: 0 0 41px 0;
-      padding-top: 102px;
+      padding-top: 60px;
   }
   .main__subtitle {
       margin-right: 60px;
@@ -143,15 +145,15 @@ font: bold 65px/86px pt_serif, arial, helvetica, sans-serif;
   }
 }
 @media (max-width:1024px){
-  .wrapper{
-    width: 95%;
-  }
+.wrapper{
+  width: 95%;
+}
   .header {
-    margin: 3% 2%;
+    margin-left: 20px;
     width: 70%;
   }
   .logo{
-    padding: 2% 7%;
+    padding: 6% 6%;
   }
   .menu {
     width: 63px;
@@ -164,17 +166,17 @@ font: bold 65px/86px pt_serif, arial, helvetica, sans-serif;
     white-space: nowrap;
   }
   .main {
-    padding: 0 51% 15% 2%;
-    background-size: 49vw 37vw;
-    background-position: 100%;
+    padding: 0 52% 14% 2%;
+    background-size: 48vw 36vw;
+    background-position: 94%;
     text-align: left;
   }
   .main__title {
-      font: bold 50px/63px pt_serif, arial, helvetica, sans-serif;
-      padding-top: 22%;
+      font: bold 51px/64px pt_serif, arial, helvetica, sans-serif;
+      padding-top: 21%;
   }
   .main__subtitle {
-      margin-right: 20%;
+      margin-right: 8%;
       font:500 19px/24px Roboto,arial,helvetica,sans-serif;
   }
 }
@@ -189,16 +191,9 @@ font: bold 65px/86px pt_serif, arial, helvetica, sans-serif;
       font: bold 43px/51px pt_serif, arial, helvetica, sans-serif;
       }
   }
-
-@media () {
-
-  }
 @media (max-width:375px){
-  .menu{
+  .menu,.logo-text{
     display:none;
-  }
-  .logo-text{
-    display: none;
   }
   .burger-menu{
     display: contents;
@@ -206,40 +201,44 @@ font: bold 65px/86px pt_serif, arial, helvetica, sans-serif;
   .wrapper{
     width: 100%;
   }
+  .header{
+    margin-left: 24px;
+  }
   .main {
     padding: 3px 6% 12% 23px;
     margin-top: 8%;
-    background-size: 69vw 58vw;
+    background-size: 71vw 52vw;
     background-position: top center;
     }
-  .logo{
-    padding: 8% 357px;
+    .logo{
+      padding: 83px 167px 0;
     }
-  .main__title {
-      font: bold 31px/41px pt_serif, arial, helvetica, sans-serif;
-      padding: 72% 0 0 4%;
+    .main__title {
+      font: bold 31px/40px pt_serif, arial, helvetica, sans-serif;
+      padding: 72% 0 0 3%;
+      margin: 0 0 32px;
       text-align: center;
     }
   .main__subtitle {
-      margin: 8% 7%;
+      margin: 8% 9%;
       padding: 0 4%;
-      font:500 16px/16px Roboto,arial,helvetica,sans-serif;
+      font:500 16px/18px Roboto,arial,helvetica,sans-serif;
       text-align: center;
     }
   .main__button {
-      padding: 13px 23px;
-      margin-left: 60px;
-      font: 500 14px/14px Roboto,arial,helvetica,sans-serif;
+      padding: 13px 20px;
+      margin: 0 0 0 60px;
+      font: 500 14px/20px Roboto,arial,helvetica,sans-serif;
       text-align: center;
       }
       .menu__btn{
         display: flex;
         align-items: center;
         position: fixed;
-        top: 27px;
-        left: 94%;
-        width: 26px;
-        height: 24px;
+        top: 34px;
+        left: 87%;
+        width: 25px;
+        height: 22px;
         cursor: pointer;
         z-index: 1;
       }
@@ -308,7 +307,7 @@ font: bold 65px/86px pt_serif, arial, helvetica, sans-serif;
   visibility: visible;
   left: 0;
   }
-  @keyframes logo {
+  /*@keyframes logo {
   25% {
      top:10px;
      left:0;
